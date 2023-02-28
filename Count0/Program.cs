@@ -3,7 +3,6 @@
 // 1, -7, 567, 89, 223-> 3
 
 // создать массив +
-
 int[] CreateArray(int size)
 {
     return new int[size];
@@ -17,8 +16,8 @@ int Input(string number)
 }
 
 // Печать +
-  void Print1(int[] array)
-  {
+void Print1(int[] array)
+{
     int length = array.Length;
     int index = 0;
     while (index < length)
@@ -27,27 +26,25 @@ int Input(string number)
       index++;
     }
     System.Console.WriteLine();
-  }
+}
 
 // Заполнение руками
-  void FillByUser(int[] array)
-  {
+void FillByUser(int[] array)
+{
     int length = array.Length;
     int index = 0;
     while (index < length)
-    {
-      array[index] = Input("Введите array[" + index + "]: ");
-      index++;
-    }
-  }
+        {
+            [index] = Input("Введите array[" + index + "]: ");
+            index++;
+        }
+}
 
 // вывод количества раз +
 void Find(int[] numbers)
 {
     int index = 0;
     int count = 0;
-    // int number = Input("Введите число: ");
-
     for (index = 0; index < numbers.Length; index++)
         {
             if (numbers[index] > 0)
@@ -60,6 +57,4 @@ int count = Input("Введите размер массива ");
 int[] numbers = CreateArray(count);
 Print1(numbers);
 FillByUser(numbers);
-// int[] numbers = new ; 
-// int length = numbers.Length;
 Find(numbers);
